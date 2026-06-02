@@ -130,7 +130,20 @@ color:#aaa;
 }
 </style>
 </head>
+<script>
+const text = "AI Enthusiast • Future Entrepreneur • Tech Explorer";
+let i = 0;
 
+function typeEffect(){
+  if(i < text.length){
+    document.querySelector(".typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 70);
+  }
+}
+
+typeEffect();
+</script>
 <body>
 
 <header>
